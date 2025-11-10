@@ -1,0 +1,39 @@
+# Google AI Studio - Deploy to Cloud Run Configuration
+# This file enables deployment via AI Studio's "Deploy to Run" button
+# 
+# AI Studio Category Requirements:
+# - Application developed using Google AI Studio
+# - Deployed to Cloud Run
+# - Uses applet function architecture
+
+runtime: nodejs20
+
+# Environment variables (set via Secret Manager in Cloud Run)
+env_variables:
+  NODE_ENV: production
+
+# Automatic scaling configuration
+automatic_scaling:
+  min_instances: 0
+  max_instances: 10
+
+# Resources
+resources:
+  cpu: 2
+  memory_gb: 1
+  disk_size_gb: 10
+
+# Health check
+readiness_check:
+  path: /api/health
+  check_interval_sec: 5
+  timeout_sec: 4
+  failure_threshold: 2
+  success_threshold: 2
+
+# Note: This app uses Dockerfile for containerization
+# AI Studio's "Deploy to Run" will use the Dockerfile for deployment
+# The app.yaml serves as configuration reference
+
+
+

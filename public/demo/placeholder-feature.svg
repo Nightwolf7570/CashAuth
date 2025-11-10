@@ -1,0 +1,33 @@
+<svg width="640" height="400" viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Security Feature Placeholder</title>
+  <desc id="desc">Neutral illustration used as a stand-in when a security feature image is unavailable.</desc>
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef2ff" />
+      <stop offset="1" stop-color="#d9ecff" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" rx="32" fill="url(#gradient)" />
+  <rect x="48" y="60" width="544" height="280" rx="24" fill="#ffffff" fill-opacity="0.8" stroke="#cfe0ff" stroke-width="4" />
+  <g fill="none" stroke="#b5c7f3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="88" y="100" width="200" height="140" rx="16" />
+    <rect x="320" y="110" width="232" height="36" rx="12" />
+    <rect x="320" y="164" width="188" height="24" rx="10" />
+    <rect x="320" y="204" width="212" height="24" rx="10" />
+    <rect x="320" y="244" width="176" height="24" rx="10" />
+  </g>
+  <circle cx="188" cy="228" r="84" fill="#d9e4ff" fill-opacity="0.45" />
+  <circle cx="188" cy="228" r="62" fill="#d1ddff" fill-opacity="0.55" />
+  <text x="188" y="236" text-anchor="middle" font-family="'Inter','Segoe UI',sans-serif" font-size="44" font-weight="700" fill="#5a6fcf">
+    SAMPLE
+  </text>
+  <text x="68" y="354" fill="#7c8fdd" font-family="'Inter','Segoe UI',sans-serif" font-size="20" font-weight="600">
+    SECURITY FEATURE PREVIEW
+  </text>
+</svg>
+
+
+
+
+
+

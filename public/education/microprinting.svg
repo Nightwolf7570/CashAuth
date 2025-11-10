@@ -1,0 +1,37 @@
+<svg width="512" height="320" viewBox="0 0 512 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Microprinting Illustration</title>
+  <desc id="desc">Stylised banknote with magnifying glass revealing crisp microprinted text.</desc>
+  <defs>
+    <linearGradient id="noteGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4fbff" />
+      <stop offset="1" stop-color="#def1ff" />
+    </linearGradient>
+    <pattern id="microText" width="24" height="8" patternUnits="userSpaceOnUse">
+      <text x="0" y="6" font-family="'Inter','Segoe UI',sans-serif" font-size="6" fill="#5a88bb" font-weight="600">USA ✧ 20 ✧</text>
+    </pattern>
+  </defs>
+  <rect x="24" y="24" width="464" height="272" rx="24" fill="url(#noteGradient)" stroke="#b9dbf3" stroke-width="6" />
+  <rect x="48" y="48" width="416" height="224" rx="18" fill="#ffffff" fill-opacity="0.75" stroke="#cfe5f6" stroke-width="4" />
+  <rect x="72" y="92" width="256" height="136" rx="16" fill="#f0f7ff" stroke="#c9dff1" />
+  <rect x="92" y="120" width="216" height="20" rx="10" fill="#d8e9f9" />
+  <rect x="92" y="156" width="186" height="18" rx="9" fill="#e3f1fd" />
+  <rect x="92" y="188" width="228" height="20" rx="10" fill="#ecf6ff" />
+  <circle cx="366" cy="176" r="68" fill="#e3f1fd" stroke="#94bde2" stroke-width="6" />
+  <circle cx="366" cy="176" r="52" fill="url(#microText)" clip-path="url(#clip)" />
+  <defs>
+    <clipPath id="clip">
+      <circle cx="366" cy="176" r="52" />
+    </clipPath>
+  </defs>
+  <line x1="414" y1="224" x2="454" y2="264" stroke="#94bde2" stroke-width="10" stroke-linecap="round" />
+  <circle cx="454" cy="264" r="18" fill="#94bde2" />
+  <text x="64" y="300" fill="#5a88bb" font-family="'Inter','Segoe UI',sans-serif" font-size="18" font-weight="600">
+    MICROPRINTING SHOULD BE SHARP UNDER MAGNIFICATION
+  </text>
+</svg>
+
+
+
+
+
+

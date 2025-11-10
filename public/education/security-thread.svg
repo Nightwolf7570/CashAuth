@@ -1,0 +1,41 @@
+<svg width="512" height="320" viewBox="0 0 512 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Banknote Security Thread Illustration</title>
+  <desc id="desc">Stylised banknote showing a metallic security thread embedded vertically.</desc>
+  <defs>
+    <linearGradient id="note" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3fbf7" />
+      <stop offset="1" stop-color="#daf0e7" />
+    </linearGradient>
+    <linearGradient id="thread" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fb3ff" />
+      <stop offset="0.25" stop-color="#c8dcff" />
+      <stop offset="0.5" stop-color="#f7faff" />
+      <stop offset="0.75" stop-color="#c8dcff" />
+      <stop offset="1" stop-color="#5d8ee6" />
+    </linearGradient>
+    <linearGradient id="shimmer" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="rgba(255,255,255,0)" />
+      <stop offset="0.5" stop-color="rgba(255,255,255,0.7)" />
+      <stop offset="1" stop-color="rgba(255,255,255,0)" />
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="464" height="272" rx="24" fill="url(#note)" stroke="#c1e2d3" stroke-width="6" />
+  <rect x="48" y="48" width="416" height="224" rx="18" fill="#ffffff" fill-opacity="0.75" stroke="#e0f3eb" stroke-width="4" />
+  <rect x="182" y="48" width="20" height="224" rx="9" fill="url(#thread)" stroke="#447ad4" stroke-width="2" stroke-opacity="0.6" />
+  <rect x="182" y="48" width="20" height="224" rx="9" fill="url(#shimmer)" opacity="0.5" />
+  <g opacity="0.3">
+    <rect x="188" y="68" width="8" height="16" rx="4" fill="#4a7cd4" />
+    <rect x="188" y="100" width="8" height="16" rx="4" fill="#4a7cd4" />
+    <rect x="188" y="132" width="8" height="16" rx="4" fill="#4a7cd4" />
+    <rect x="188" y="164" width="8" height="16" rx="4" fill="#4a7cd4" />
+    <rect x="188" y="196" width="8" height="16" rx="4" fill="#4a7cd4" />
+    <rect x="188" y="228" width="8" height="16" rx="4" fill="#4a7cd4" />
+  </g>
+  <rect x="240" y="96" width="200" height="32" rx="16" fill="#bfe3d1" fill-opacity="0.7" />
+  <rect x="240" y="144" width="176" height="22" rx="11" fill="#d2ecdf" />
+  <rect x="240" y="180" width="150" height="22" rx="11" fill="#dff3e9" />
+  <rect x="240" y="216" width="196" height="38" rx="19" fill="#95c8ae" fill-opacity="0.45" />
+  <path d="M 128 140 Q 152 160 128 180" stroke="#95c8ae" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6" />
+  <path d="M 128 148 L 182 160" stroke="#95c8ae" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5" />
+  <text x="62" y="300" fill="#669978" font-family="'Inter','Segoe UI',sans-serif" font-size="18" font-weight="600">VERTICAL METALLIC SECURITY THREAD</text>
+</svg>

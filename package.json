@@ -1,0 +1,46 @@
+{
+  "name": "cashguard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "firebase:deploy": "npm run build && firebase deploy --only hosting,firestore:rules,storage:rules",
+    "cloudrun:build": "gcloud builds submit --tag gcr.io/PROJECT_ID/cashguard",
+    "cloudrun:deploy": "gcloud run deploy cashguard --image gcr.io/PROJECT_ID/cashguard --platform managed --region us-central1 --allow-unauthenticated",
+    "cloudrun:setup": "chmod +x ./scripts/setup-cloudrun.sh && ./scripts/setup-cloudrun.sh",
+    "vertexai:setup": "chmod +x ./scripts/setup-vertex-ai.sh && ./scripts/setup-vertex-ai.sh",
+    "firebase:add-domain": "node scripts/add-firebase-domain-api.js",
+    "firebase:domain-help": "./scripts/add-firebase-domain.sh",
+    "docker:build": "docker build -t cashguard .",
+    "docker:run": "docker run -p 8080:8080 --env-file .env.local cashguard",
+    "aistudio:deploy": "echo 'To deploy via AI Studio: Use the Deploy to Run button in Google AI Studio. This app is configured for Cloud Run deployment.'"
+  },
+  "dependencies": {
+    "@google-cloud/aiplatform": "^5.12.0",
+    "@google/generative-ai": "^0.24.1",
+    "browser-image-compression": "^2.0.2",
+    "firebase": "^12.5.0",
+    "firebase-admin": "^13.5.0",
+    "jspdf": "^3.0.3",
+    "lucide-react": "^0.552.0",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/jspdf": "^1.3.3",
+    "@types/node": "^20.8.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.51.0",
+    "eslint-config-next": "^14.0.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2"
+  }
+}

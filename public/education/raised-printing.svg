@@ -1,0 +1,35 @@
+<svg width="512" height="320" viewBox="0 0 512 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Raised Printing Illustration</title>
+  <desc id="desc">Stylised banknote showing tactile intaglio lines highlighted under touch.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f8ff" />
+      <stop offset="1" stop-color="#e4e9ff" />
+    </linearGradient>
+    <pattern id="texture" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 12 L12 0 M-3 9 L3 15 M9 -3 L15 3" stroke="#9aa9df" stroke-width="1.1" opacity="0.4" />
+    </pattern>
+  </defs>
+  <rect x="24" y="24" width="464" height="272" rx="24" fill="url(#paper)" stroke="#c9d1ff" stroke-width="6" />
+  <rect x="48" y="48" width="416" height="224" rx="18" fill="#ffffff" fill-opacity="0.82" stroke="#dbe2ff" stroke-width="4" />
+  <g transform="translate(92 84)">
+    <rect width="220" height="152" rx="16" fill="#eef1ff" stroke="#cdd5ff" />
+    <rect x="14" y="18" width="190" height="48" rx="12" fill="#dfe4ff" />
+    <rect x="14" y="74" width="160" height="16" rx="8" fill="#e9edff" />
+    <rect x="14" y="102" width="176" height="16" rx="8" fill="#e9edff" />
+    <rect x="14" y="130" width="120" height="16" rx="8" fill="#f2f4ff" />
+  </g>
+  <rect x="332" y="96" width="120" height="160" rx="18" fill="url(#texture)" stroke="#92a3df" stroke-width="4" />
+  <circle cx="392" cy="160" r="58" fill="#9aa9df" fill-opacity="0.25" />
+  <path d="M450 128c-12-18-30-36-58-36-37 0-66 29-66 66 0 12 3 24 8.5 33.5" fill="none" stroke="#6475b9" stroke-width="6" stroke-linecap="round" stroke-dasharray="12 10" />
+  <text x="332" y="276" fill="#5d6db5" font-family="'Inter','Segoe UI',sans-serif" font-size="18" font-weight="600">
+    RAISED INK CAN BE FELT UNDER YOUR FINGERTIPS
+  </text>
+  <path d="M420 240c10 6 20 18 20 30 0 16-14 28-30 24-8-2-16-10-18-18" fill="none" stroke="#5d6db5" stroke-width="6" stroke-linecap="round" stroke-dasharray="6 8" />
+</svg>
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+<svg width="512" height="320" viewBox="0 0 512 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Color Shifting Ink Illustration</title>
+  <desc id="desc">Stylised banknote highlighting a corner numeral that changes color when tilted.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff6f2" />
+      <stop offset="1" stop-color="#ffe4d6" />
+    </linearGradient>
+    <linearGradient id="inkShift" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4a90e2" />
+      <stop offset="0.5" stop-color="#50e3c2" />
+      <stop offset="1" stop-color="#b8e986" />
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="464" height="272" rx="24" fill="url(#background)" stroke="#ffd1ba" stroke-width="6" />
+  <rect x="48" y="48" width="416" height="224" rx="18" fill="#ffffff" fill-opacity="0.7" stroke="#ffe2d0" stroke-width="4" />
+  <rect x="72" y="96" width="280" height="160" rx="18" fill="#fff2ea" stroke="#ffddcb" />
+  <rect x="84" y="112" width="196" height="20" rx="10" fill="#ffd2bb" />
+  <rect x="84" y="148" width="220" height="20" rx="10" fill="#ffe0cf" />
+  <rect x="84" y="184" width="164" height="20" rx="10" fill="#ffe8db" />
+  <circle cx="388" cy="212" r="70" fill="url(#inkShift)" stroke="#2b6cb0" stroke-opacity="0.2" stroke-width="8" />
+  <text x="344" y="228" fill="rgba(255,255,255,0.95)" font-family="'Inter','Segoe UI',sans-serif" font-weight="700" font-size="60">
+    20
+  </text>
+  <path d="M360 120l36-36 20 20-36 36z" fill="#4a90e2" fill-opacity="0.35" />
+  <path d="M376 132l36-36 12 12-36 36z" fill="#50e3c2" fill-opacity="0.45" />
+  <text x="70" y="300" fill="#d17a5b" font-family="'Inter','Segoe UI',sans-serif" font-size="18" font-weight="600">
+    TILT BILL TO SEE COLOR TRANSITION IN NUMERAL
+  </text>
+</svg>
+
+
+
+
+
+

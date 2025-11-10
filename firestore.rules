@@ -1,0 +1,40 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Scans collection - users can only access their own scans
+    match /scans/{scanId} {
+      // Allow read if user is authenticated and owns the scan
+      // This works for both single document reads and list queries
+      // Firestore will only return documents where userId matches auth.uid when querying
+      allow read: if request.auth != null && request.auth.uid == resource.data.userId;
+      
+      // Allow create if user is authenticated and sets their own userId
+      allow create: if request.auth != null && request.auth.uid == request.resource.data.userId;
+      
+      // Allow delete if user is authenticated and owns the scan
+      allow delete: if request.auth != null && request.auth.uid == resource.data.userId;
+      
+      // Disallow updates for security
+      allow update: if false;
+    }
+    
+    // Validations collection (if used)
+    match /validations/{validationId} {
+      allow read: if request.auth != null && (
+        !('userId' in resource.data) || 
+        resource.data.userId == request.auth.uid
+      );
+      allow create: if request.auth != null;
+      allow delete: if request.auth != null && (
+        !('userId' in resource.data) || 
+        resource.data.userId == request.auth.uid
+      );
+      allow update: if false;
+    }
+    
+    // Deny all other access
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
